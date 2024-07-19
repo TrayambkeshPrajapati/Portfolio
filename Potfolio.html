@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="Potfoloi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="heading">
+        <div id="header">
+            <div class="container">
+                <nav>
+                     <p class  = "logo" style="color:red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Trayambkesh<p>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>   
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>  
+                <div class="text">
+                    <h1>Hi I'm <span>Trayambkesh Prajapati...</span></h1>
+                    <p>Student At Itm University Gwalior.</p>
+                    <p>(Btech. CSE.)</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id = "about">
+            <div class="about">
+                <div class="container">
+                    <div class="row">
+                       <div class="about-col1">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/640px-Smiley.svg.png" alt="">
+                       </div>
+                       <div class="about-col2">
+                        <h1 class="sub">About Me</h1>
+                        <p class = "meow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis alias veritatis hic corrupti unde aperiam odit cupiditate illum laboriosam nemo cum voluptatum, dolor non magni pariatur optio? Quidem, eius laborum.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick ="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick = "opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick = "opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id ="skills">
+                            <ol>
+                                <li><span>Java</span><br>Swing Framework</li>
+                                <li><span>Html,Css,JavaScript</span><br>Web Development</li>
+                                <li><span>Pyton</span><br>Artificial Intelligence</li>
+                            </ol>
+                            </div>
+                            <div class="tab-contents" id ="experience">
+                                <ol>
+                                    <li>None</li>
+                                </ol>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ol>
+                                    <li>
+                                        <span>2022</span><br>Higher Secondary</ol>
+                                    </li>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-brands fa-java"></i>
+                        <h2>Java</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quo, ratione labore eligendi laborum rem nisi possimus ipsam veniam id quibusdam odio dolorum quasi asperiores! Aperiam pariatur incidunt inventore vel.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Dev</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quo, ratione labore eligendi laborum rem nisi possimus ipsam veniam id quibusdam odio dolorum quasi asperiores! Aperiam pariatur incidunt inventore vel.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h2>python</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quo, ratione labore eligendi laborum rem nisi possimus ipsam veniam id quibusdam odio dolorum quasi asperiores! Aperiam pariatur incidunt inventore vel.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id ="contact"> 
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> trayambkeshprajapati@gmail.com</p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i> 7000767362</p>
+                        <div class="social">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="email" name="Email" placeholder="E-Mail" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p><i class="fa-solid fa-heart"></i> ThankYou <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </footer>
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxRVmx3A-YYy98hHFRt9y8DG4wPw5JNXHmmlp1JPyiPJ6kBZg82s7-YN1g2q94fV50L/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
